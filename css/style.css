@@ -8,9 +8,12 @@ body {
   padding: 50px;
   background-color: lightyellow;
 }
-h1 {
-  margin-bottom: 25px;
+h2 {
+  margin-bottom: 12.5px;
+  margin-top: 50px;
+  font-size: 20px;
 }
 p {
+  margin-bottom: 12.5px;
   font-size: 16px;
 }
