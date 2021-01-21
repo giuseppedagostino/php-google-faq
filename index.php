@@ -61,10 +61,13 @@
   <body>
     <a href='#'></a>
     <h1>php-google-faq</h1>
-    <?php for ($i=0; $i < count($questions); $i++) {
+    <?php /*for ($i=0; $i < count($questions); $i++) {
       $question = $questions[$i];
       echo "<h2>" . $question["title"] . "</h2>";
       echo "<p>" . $question["answer"] . "</p>";
-    } ?>
+    } */?>
+    <?php foreach ($questions as $question): ?>
+      <?php var_dump($question) ?>
+    <?php endforeach; ?>
   </body>
 </html>
