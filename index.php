@@ -1,6 +1,24 @@
 <?php
   // struttura dati
-  $questions = [];
+  $questions = [
+    // prima domanda
+    [
+      // titolo
+      "title" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
+    ],
+    // seconda domanda
+    [
+      "title" => "Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
+    ],
+    // terza domanda
+    [
+      "title" => "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
+    ],
+    // quarta domanda
+    [
+      "title" => "Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?",
+    ],
+  ];
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +35,10 @@
 
   <body>
     <h1>php-google-faq</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <?php for ($i=0; $i < count($questions); $i++) {
+      $question = $questions[$i];
+      echo $question["title"];
+      echo "<br>";
+    } ?>
   </body>
 </html>
